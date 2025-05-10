@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 
 app = FastAPI()
-model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
+model = SentenceTransformer("paraphrase-distilroberta-base-v1")
 
 class TextInput(BaseModel):
     text: str
